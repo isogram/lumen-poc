@@ -1,0 +1,39 @@
+{
+    "name": "isogram/lumen-poc",
+    "description": "Lumen Framework PoC",
+    "keywords": ["php", "framework", "laravel", "lumen", "dingo", "api", "jwt"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/lumen-framework": "5.2.*",
+        "vlucas/phpdotenv": "~2.2",
+        "tymon/jwt-auth": "^0.5.9",
+        "illuminate/routing": "^5.2",
+        "illuminate/hashing": "^5.2",
+        "dingo/api": "1.0.x@dev",
+        "predis/predis": "^1.1",
+        "illuminate/redis": "^5.2",
+        "doctrine/dbal": "^2.5",
+        "illuminate/mail": "^5.2"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~4.0",
+        "symfony/var-dumper": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/",
+            "database/"
+        ],
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
